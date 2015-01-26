@@ -1,0 +1,30 @@
+<div class="combobox-wrapper">
+	<!-- input -->
+    <input class="combobox-input" type="text" 
+           placeholder="{{placeholder}}"
+           name="{{name}}"
+           ng-required="required"
+           ng-model="query" 
+           ng-change="handleChange()" 
+           ng-blur="handleBlur()"
+           ng-focus="handleFocus()"
+           ng-click="handleClick(true)"
+           ng-keydown="handleKeyboardClick($event)">
+	<!-- caret -->
+	<span class="combobox-caret" 
+		ng-hide="hideCaret" 
+		ng-click="focusInput()"></span>    
+    <!-- dropdown -->
+    <ul class="combobox-dropdown" ng-show="opened">
+        <li class="combobox-option" 
+        	ng-class="{'active': isActive(option, $index)}" 
+            ng-repeat="option in optionsView">
+            <a class="combobox-option-link" 
+              tabindex="-1" href="#"
+              ng-focus="handleFocus()"
+              ng-click="handleSelect(option.id)" 
+              ng-bind-html="option.text"></a>
+        </li>
+        <li class="combobox-empty" ng-show="!optionsView.length">No results...</li>
+    </ul>
+</div>

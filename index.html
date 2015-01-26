@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular Typeahead Test</title>
+	<link rel="stylesheet" href="/css/combobox.css"/>
+</head>
+<body>
+	<div class="ng-cloak" ng-app="MainApp" ng-controller="MainCtrl">
+		<input type="text" 
+		   class="combobox"
+		   ng-model="selectedOption"
+		   placeholder="Select option"
+		   data-options="options"/>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.10/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.10/angular-sanitize.min.js"></script>
+	<script src="/js/combobox/directive/combobox.js"></script>
+	<script src="/js/main.js"></script>
+</body>
+</html>

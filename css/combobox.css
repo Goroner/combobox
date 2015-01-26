@@ -1,0 +1,79 @@
+.ng-cloak {
+	display: none;
+}
+
+.combobox-wrapper{
+	position: relative;
+}
+
+.combobox-input{
+	padding: 8px;
+	margin: 0;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+	font-size: .9em;
+	color: #444;
+	outline: none;	
+}
+
+.combobox-dropdown{
+	position: absolute;
+	width: 100%;
+	margin: -3px 0 0;
+	padding: 5px 0;
+	z-index: 10;
+	box-sizing: border-box;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: #fff;
+	border: 1px solid #e6e6e6;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	list-style: none;
+}
+
+.combobox-option {
+	cursor: pointer;
+}
+
+.combobox-option:hover {
+	background: #e6e6e6;
+}
+
+.combobox-option:hover .combobox-option-link {
+	color: #444;
+}
+
+.combobox-option.active {
+	background: #A3CC29;
+}
+
+.combobox-option.active .combobox-option-link{
+	color: #fff;
+}
+
+.combobox-option-link{
+	display: block;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #444;
+	outline: none;
+}
+
+.combobox-caret{
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	right: 0;
+	width: 35px;
+	height: 100%;
+	border-left: 1px solid #e6e6e6;
+	cursor: pointer;
+}
+
+.combobox-empty{
+	padding: 0 10px;
+	font-style: italic;
+	color: #444;	
+}
